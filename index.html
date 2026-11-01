@@ -87,13 +87,15 @@
 
     <h3>2.2 Cihazda saklanan veriler (yalnızca yerel)</h3>
     <ul>
-      <li><strong>Öğrenme ilerlemesi:</strong> Öğrenilen kelimeler, tamamlanan dersler, SRS tekrar takvimi, XP, seri
-        günleri.</li>
-      <li><strong>Ayarlar:</strong> Seçili hedef dil, günlük hedef (kelime/dakika), bildirim saati, CEFR seviyesi.</li>
-      <li><strong>Güvenlik:</strong> Uygulama, Android bulut yedeğine dahil edilmeyecek şekilde yapılandırılmıştır (<code>allowBackup=false</code>).</li>
-      <li><strong>Hata defteri:</strong> Yanlış cevaplanan kelimeler.</li>
+      <li><strong>Öğrenme ilerlemesi:</strong> Öğrenilen kelimeler ve harfler, tamamlanan dersler, SRS tekrar takvimi,
+        test ve dinleme doğru/yanlış sayıları, XP, seri günleri, günlük çalışma süresi.</li>
+      <li><strong>Hata defteri:</strong> Yanlış cevaplanan kelimeler ve hata sayıları.</li>
+      <li><strong>Ayarlar:</strong> Seçili hedef dil, günlük hedef (kelime/dakika), hatırlatma açık/kapalı ve saati,
+        CEFR seviyesi.</li>
     </ul>
-    <p>Bu veriler <strong>uygulama silinince veya "Verileri Sıfırla" kullanıldığında tamamen silinir</strong>.</p>
+    <p>Bu veriler yalnızca cihazınızda, uygulamanın kendi depolama alanında tutulur ve cihazdan dışarı gönderilmez.
+      Uygulama Android bulut yedeğine dahil edilmeyecek şekilde yapılandırılmıştır (<code>allowBackup=false</code>);
+      bu nedenle veriler Google hesabınıza da yedeklenmez.</p>
   </div>
 
   <div class="section">
@@ -105,6 +107,20 @@
       <li>Telaffuz pratiği cihazınızın konuşma tanıma servisini kullanır. Çoğu Android telefonda bu servisi
         Google sağlar ve ses, o servisin kendi politikasına göre işlenebilir.</li>
       <li>Uygulama sesinizi kaydetmez, saklamaz ve geliştiriciye göndermez.</li>
+      <li>Tanınan metin yalnızca ekranda hedef kelimeyle karşılaştırılıp benzerlik puanı hesaplamak için kullanılır;
+        kaydedilmez.</li>
+      <li>Mikrofon yalnızca siz telaffuz ekranında dinleme düğmesine bastığınızda kullanılır.</li>
+    </ul>
+
+    <h3>3.2 Bildirimler</h3>
+    <ul>
+      <li>Günlük hatırlatma, açarsanız cihazınızda yerel olarak planlanır; bir sunucudan gönderilmez.</li>
+    </ul>
+
+    <h3>3.3 Veri paylaşımı</h3>
+    <ul>
+      <li>Uygulamada reklam, analiz, çökme raporlama veya takip aracı yoktur.</li>
+      <li>Hiçbir veri satılmaz ya da üçüncü taraflarla paylaşılmaz.</li>
     </ul>
 
     <p><strong>Not:</strong> Mikrofon izni verilmezse yalnızca telaffuz pratiği çalışmaz; uygulamanın kalanı (sözlük, gramer, test, karşılaştırma, dinleme, dikte) internet olmadan tam işlevseldir.</p>
@@ -123,7 +139,7 @@
       <tbody>
         <tr>
           <td style="padding:8px;"><code>INTERNET</code></td>
-          <td style="padding:8px;">Cihazın konuşma tanıma servisi için</td>
+          <td style="padding:8px;">Telaffuz pratiğinde cihazın konuşma tanıma servisinin ağ erişimi için. Uygulama bu izinle kendi başına veri göndermez.</td>
           <td style="padding:8px;">Hayır</td>
         </tr>
         <tr>
@@ -152,8 +168,13 @@
 
   <div class="section">
   <h2>5. Verilerinizin Silinmesi</h2>
-  <p>Tüm yerel veriler, Profil ekranındaki <strong>"Verileri Sıfırla"</strong> seçeneğiyle veya uygulamayı kaldırarak
-    silinebilir. Geliştirici sunucusunda sizinle ilişkili bir veri tutulmadığı için ayrıca silme talebi gerekmez. Üçüncü
+  <ul>
+    <li>Profil ekranındaki <strong>"İlerlemeyi sıfırla"</strong> seçeneği öğrenilen kelimeleri, dersleri, test
+      sonuçlarını, XP'yi ve seriyi siler.</li>
+    <li>Ayarlar ve hata defteri dahil <strong>tüm verileri</strong> silmek için uygulamayı kaldırabilir ya da Android
+      ayarlarında <em>Uygulamalar → Bu Menim Tilim → Depolama → Verileri temizle</em> yolunu kullanabilirsiniz.</li>
+  </ul>
+  <p>Geliştirici sunucusunda sizinle ilişkili bir veri tutulmadığı için ayrıca silme talebi gerekmez. Üçüncü
     taraf servislerdeki (cihazınızın konuşma tanıma servisi) veriler için ilgili servisin
     politikasına bakın.</p>
   </div>
@@ -172,7 +193,7 @@
   <div class="section">
     <h2>8. Değişiklikler ve İletişim</h2>
     <p>Bu politika güncellendiğinde yukarıdaki tarih değişir. Sorularınız için: <strong>Tyatek</strong> —
-      <strong>sahinozgun@gmail.com</strong></p>
+      <a href="mailto:sahinozgun@gmail.com"><strong>sahinozgun@gmail.com</strong></a></p>
   </div>
 </body>
 
