@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası | Bu Menim Tilim</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+      color: #1a1a1a;
+    }
+
+    h1 {
+      color: #2d3748;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+    }
+
+    h2 {
+      color: #2d3748;
+      margin-top: 32px;
+    }
+
+    h3 {
+      color: #4a5568;
+    }
+
+    a {
+      color: #3182ce;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      color: #718096;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      background: #edf2f7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Uygulama: <strong>Bu Menim Tilim</strong> (com.tyatek.turkdilleri)<br>
+    Son güncelleme: 1 Kasım 2026<br>
+    Sürüm: 1.7.1+9</p>
+
+  <div class="section">
+    <h2>1. Genel Bakış</h2>
+    <p><strong>Bu Menim Tilim</strong>, Türk dillerini (Türkiye Türkçesi, Azerbaycan Türkçesi, Kazak Türkçesi, Özbek
+      Türkçesi, Uygur Türkçesi, Kırgız Türkçesi, Türkmen Türkçesi) yan yana karşılaştırarak öğreten, <strong>tamamen
+        çevrimdışı çalışan</strong> bir mobil uygulamadır.</p>
+    <p>Uygulama bir hesap gerektirmez ve geliştiricinin bir sunucusuna veri göndermez. Yalnızca <strong>isteğe bağlı</strong> konuşma tanıma özelliğini (telaffuz ve dikte) kullandığınızda, cihazınızın konuşma tanıma servisi devreye girer (Bölüm 3).</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Toplanan Veriler</h2>
+    <h3>2.1 Otomatik toplanmayan veriler</h3>
+    <ul>
+      <li>Kullanıcı kimliği (e-posta, telefon, Google/Apple hesabı) <strong>istenmez</strong>.</li>
+      <li>Konum, adres defteri, SMS, çağrı kayıtları <strong>erişilmez</strong>.</li>
+      <li>Cihaz kimliği (Android ID, Advertising ID) <strong>toplanmaz</strong>.</li>
+    </ul>
+
+    <h3>2.2 Cihazda saklanan veriler (yalnızca yerel)</h3>
+    <ul>
+      <li><strong>Öğrenme ilerlemesi:</strong> Öğrenilen kelimeler, tamamlanan dersler, SRS tekrar takvimi, XP, seri
+        günleri.</li>
+      <li><strong>Ayarlar:</strong> Seçili hedef dil, günlük hedef (kelime/dakika), bildirim saati, CEFR seviyesi.</li>
+      <li><strong>Güvenlik:</strong> Uygulama, Android bulut yedeğine dahil edilmeyecek şekilde yapılandırılmıştır (<code>allowBackup=false</code>).</li>
+      <li><strong>Hata defteri:</strong> Yanlış cevaplanan kelimeler.</li>
+    </ul>
+    <p>Bu veriler <strong>uygulama silinince veya "Verileri Sıfırla" kullanıldığında tamamen silinir</strong>.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Konuşma Tanıma ve Üçüncü Taraf Servisler</h2>
+    <p>Uygulama <strong>çevrimdışı çalışır</strong>; geliştiricinin sunucusuna, reklam veya analiz servisine bağlanmaz. Tüm sesler uygulamanın içindedir.</p>
+
+    <h3>3.1 Konuşma tanıma (mikrofon)</h3>
+    <ul>
+      <li>Telaffuz pratiği cihazınızın konuşma tanıma servisini kullanır. Çoğu Android telefonda bu servisi
+        Google sağlar ve ses, o servisin kendi politikasına göre işlenebilir.</li>
+      <li>Uygulama sesinizi kaydetmez, saklamaz ve geliştiriciye göndermez.</li>
+    </ul>
+
+    <p><strong>Not:</strong> Mikrofon izni verilmezse yalnızca telaffuz pratiği çalışmaz; uygulamanın kalanı (sözlük, gramer, test, karşılaştırma, dinleme, dikte) internet olmadan tam işlevseldir.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. İzinler</h2>
+    <table style="width:100%; border-collapse:collapse; margin:16px 0;">
+      <thead>
+        <tr style="background:#edf2f7;">
+          <th style="padding:8px; text-align:left;">İzin</th>
+          <th style="padding:8px; text-align:left;">Amaç</th>
+          <th style="padding:8px; text-align:left;">Zorunlu mu?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px;"><code>INTERNET</code></td>
+          <td style="padding:8px;">Cihazın konuşma tanıma servisi için</td>
+          <td style="padding:8px;">Hayır</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;"><code>RECORD_AUDIO</code></td>
+          <td style="padding:8px;">Mikrofonla konuşma (STT)</td>
+          <td style="padding:8px;">Hayır (isteğe bağlı)</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;"><code>POST_NOTIFICATIONS</code></td>
+          <td style="padding:8px;">Günlük hatırlatma bildirimi</td>
+          <td style="padding:8px;">Hayır (kullanıcı açarsa)</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;"><code>RECEIVE_BOOT_COMPLETED</code></td>
+          <td style="padding:8px;">Cihaz yeniden başlatıldığında hatırlatmayı yeniden planla</td>
+          <td style="padding:8px;">Hayır</td>
+        </tr>
+        <tr>
+          <td style="padding:8px;"><code>VIBRATE</code></td>
+          <td style="padding:8px;">Hatırlatma bildiriminde titreşim</td>
+          <td style="padding:8px;">Hayır</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+  <h2>5. Verilerinizin Silinmesi</h2>
+  <p>Tüm yerel veriler, Profil ekranındaki <strong>"Verileri Sıfırla"</strong> seçeneğiyle veya uygulamayı kaldırarak
+    silinebilir. Geliştirici sunucusunda sizinle ilişkili bir veri tutulmadığı için ayrıca silme talebi gerekmez. Üçüncü
+    taraf servislerdeki (cihazınızın konuşma tanıma servisi) veriler için ilgili servisin
+    politikasına bakın.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>Uygulama, çocuklardan bilerek kişisel veri toplamaz. Uygulamada sohbet, hesap veya kullanıcı içeriği paylaşımı yoktur.</p>
+  </div>
+
+  <div class="section">
+    <h2>7. İçerik Hakkında Not</h2>
+    <p>Diyalog, örnek cümle ve bazı sözlük çevirileri makine çevirisi taslağıdır ve ana dili konuşanlarca doğrulanmamış
+      olabilir. Bu içerik "taslak" olarak işaretlenmiştir.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Değişiklikler ve İletişim</h2>
+    <p>Bu politika güncellendiğinde yukarıdaki tarih değişir. Sorularınız için: <strong>Tyatek</strong> —
+      <strong>sahinozgun@gmail.com</strong></p>
+  </div>
+</body>
+
+</html>
